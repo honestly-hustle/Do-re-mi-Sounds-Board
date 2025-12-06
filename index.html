@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title> Do Re Mi Soundboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-overlay"></div>
+
+  <div class="app">
+    <header class="app-header">
+      <h1 class="title"> Do Re Mi Soundboard</h1>
+      <p class="subtitle">
+  Soft piano pads for each note in the scale.<br>
+  <span class="hint">You can also press keys 1–8 on your keyboard to play notes 🎹</span>
+</p>
+
+    </header>
+
+    <main>
+      <!-- Piano pads -->
+      <section class="grid">
+        <button class="btn sound-btn" data-sound="do">
+          <span class="icon">🎵</span>
+          <span class="label">DO (C)</span>
+        </button>
+
+        <button class="btn sound-btn" data-sound="re">
+          <span class="icon">🎵</span>
+          <span class="label">RE (D)</span>
+        </button>
+
+        <button class="btn sound-btn" data-sound="mi">
+          <span class="icon">🎵</span>
+          <span class="label">MI (E)</span>
+        </button>
+
+        <button class="btn sound-btn" data-sound="fa">
+          <span class="icon">🎵</span>
+          <span class="label">FA (F)</span>
+        </button>
+
+        <button class="btn sound-btn" data-sound="so">
+          <span class="icon">🎵</span>
+          <span class="label">SO (G)</span>
+        </button>
+
+        <button class="btn sound-btn" data-sound="la">
+          <span class="icon">🎵</span>
+          <span class="label">LA (A)</span>
+        </button>
+
+        <button class="btn sound-btn" data-sound="ti">
+          <span class="icon">🎵</span>
+          <span class="label">TI (B)</span>
+        </button>
+
+        <button class="btn sound-btn" data-sound="do-high">
+          <span class="icon">🎵</span>
+          <span class="label">DO (HIGH)</span>
+        </button>
+      </section>
+
+      <!-- Controls -->
+      <section class="controls">
+        <div class="control-row">
+          <span class="control-label">Volume</span>
+          <input
+            id="volumeSlider"
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.8"
+          />
+        </div>
+
+        <div class="control-row">
+          <span class="control-label">Mute</span>
+          <button id="muteBtn" class="mute-btn">
+            <span class="mute-icon">🔊</span>
+            <span class="mute-text">On</span>
+          </button>
+        </div>
+      </section>
+
+      <p class="footer-text">
+        Try playing! <br>
+        1 1 5 5 6 6 5 <br>
+        4 4 3 3 2 2 1 <br>
+        5 5 4 4 3 3 2 <br>
+        5 5 4 4 3 3 2 <br>
+        1 1 5 5 6 6 5 <br>
+        4 4 3 3 2 2 1
+      </p>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
